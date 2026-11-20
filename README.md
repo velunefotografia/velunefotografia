@@ -21,7 +21,7 @@ Não há etapa de build: basta servir a pasta como arquivos estáticos.
 
 1. No repositório, abra **Settings → Pages**.
 2. Em **Build and deployment**, escolha **Deploy from a branch**, branch `main`, pasta `/ (root)`.
-3. Salve. Em alguns minutos o site fica em `https://<seu-usuário>.github.io/velune-website/`.
+3. Salve. Em alguns minutos o site fica em `https://velunefotografia.github.io/velunefotografia/`.
 4. Para usar `velunefotografia.com`, informe o domínio em **Custom domain** e aponte o DNS conforme as instruções do GitHub.
 
 ## Ver localmente
