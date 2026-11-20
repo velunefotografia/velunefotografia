@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velune — Histórias</title>
+<meta name="description" content="Velune — fotografia de casamentos e ensaios por Fellipe e Natália Gomes. Afeto e memórias.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&amp;family=Libre+Franklin:wght@300;400;500&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#28333E}
+.v{font-family:'Libre Franklin',system-ui,sans-serif;font-size:14px;line-height:1.6;color:#28333E;background:#FFFFFF;overflow-x:clip;-webkit-font-smoothing:antialiased}
+.v *{box-sizing:border-box}
+.v img{display:block;max-width:100%}
+.serif{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400}
+.wrap{padding-inline:clamp(20px,3.4vw,48px)}
+.tone-pb .tile img{filter:grayscale(1)}
+.hdr{position:sticky;top:0;z-index:30;height:52px;font-size:13px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:#FFFFFF;border-bottom:1px solid rgba(228,220,209,.4)}
+.hdr .l,.hdr .r{display:flex;gap:28px}
+.hdr .r{justify-content:flex-end}
+.lnk{color:#28333E;padding:12px 0;text-decoration:none;background:linear-gradient(currentColor,currentColor) 100% calc(100% - var(--ul, 0px))/0 1px no-repeat;transition:background-size .55s cubic-bezier(.2,.7,.2,1),color .3s ease}
+.lnk:hover,.lnk:focus-visible,.lnk.on{background-size:100% 1px;background-position:0 calc(100% - var(--ul, 0px))}
+.top{display:flex;justify-content:space-between;align-items:baseline;padding-block:20px 16px;font-size:13px}
+.top span:last-child{color:#28333E}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px 8px 0}
+.tile{position:relative;display:block;overflow:hidden;background:#E4DCD1;text-decoration:none;aspect-ratio:1/1.18}
+.tile.full{grid-column:1/3;aspect-ratio:1.69/1}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.tile .veil{position:absolute;inset:0;background:rgba(40,51,62,0);transition:background-color .6s ease}
+.tile .cap{position:absolute;left:24px;right:24px;bottom:20px;display:flex;justify-content:space-between;align-items:baseline;gap:16px;color:#FFFFFF;opacity:0;transform:translateY(8px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.tile .cap .t{font-family:'Libre Caslon Display',Georgia,serif;font-size:clamp(22px,2.2vw,32px);line-height:1.1}
+.tile .cap .m{font-size:12px;letter-spacing:.04em}
+.tile:hover img,.tile:focus-visible img{transform:scale(1.035)}
+.tile:hover .veil,.tile:focus-visible .veil{background:rgba(40,51,62,.28)}
+.tile:hover .cap,.tile:focus-visible .cap{opacity:1;transform:none}
+.tile.empty{display:flex;align-items:center;justify-content:center;color:#28333E}
+.ft{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:52px;padding-block:8px;flex-wrap:wrap;margin-top:8px;font-size:12px;color:#28333E;border-top:1px solid rgba(228,220,209,.4)}
+.ft-links{display:flex;flex-wrap:wrap;gap:4px 28px;justify-content:flex-end}
+.ft .ft-cta{color:#28333E}
+.ft .ft-cta .arr{display:inline-block;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.ft .ft-cta:hover .arr{transform:translateX(4px)}
+.ft a{color:#28333E;text-decoration:none;background:linear-gradient(currentColor,currentColor) 100% calc(100% - var(--ul, 0px))/0 1px no-repeat;transition:background-size .55s cubic-bezier(.2,.7,.2,1),color .3s ease}
+.ft a:hover,.ft a:focus-visible{background-size:100% 1px;background-position:0 calc(100% - var(--ul, 0px))}
+:focus-visible{outline:1px solid #28333E;outline-offset:3px}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.grid > *{animation:up 1s cubic-bezier(.2,.7,.2,1) both}
+.grid > *:nth-child(2){animation-delay:.1s}.grid > *:nth-child(3){animation-delay:.2s}.grid > *:nth-child(4){animation-delay:.3s}.grid > *:nth-child(5){animation-delay:.4s}
+@media (hover:none){.tile .cap{opacity:1;transform:none}.tile .veil{background:rgba(40,51,62,.18)}}
+@media (prefers-reduced-motion: reduce){.grid > *{animation:none}.tile img,.tile .cap,.tile .veil,.lnk{transition:none}}
+@media (max-width:760px){
+.hdr{grid-template-columns:auto 1fr;height:48px}
+.hdr .l{display:none}
+.grid{gap:6px;padding:6px 6px 0}
+.tile .cap{left:12px;right:12px;bottom:10px}
+.tile .cap .m{display:none}
+}
+.lnk{--ul:12px}
+
+/* hover: hairline, soft */
+.lnk,.tbtn,.ft a,.ct-list a,.menu-btn,.mnav a.big,.idx a,.card .t span:first-child,.next .serif{--hl:color-mix(in srgb,currentColor 40%,transparent);background:linear-gradient(var(--hl),var(--hl)) 0 100%/0 1px no-repeat content-box;transition:background-size .8s cubic-bezier(.22,.61,.36,1)}
+.lnk:hover,.lnk:focus-visible,.tbtn:hover,.tbtn:focus-visible,.ft a:hover,.ft a:focus-visible,.ct-list a:hover,.ct-list a:focus-visible,.menu-btn:hover,.menu-btn:focus-visible,.mnav a.big:hover,.idx a:hover,.idx a:focus-visible,.card:hover .t span:first-child,.card:focus-visible .t span:first-child,.next:hover .serif{background-size:100% 1px;background-position:0 100%}
+.idx a{width:fit-content}
+@media (prefers-reduced-motion:reduce){.lnk,.tbtn,.ft a,.ct-list a,.menu-btn,.mnav a.big,.idx a,.card .t span:first-child,.next .serif{transition:none}}
+/* header: identical to Main */
+.hdr{position:sticky;top:0;z-index:30;height:52px;font-size:13px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:#FFFFFF;border-bottom:1px solid rgba(228,220,209,.4)}
+.hdr .l{display:flex;gap:28px}
+.hdr .r{display:flex;gap:28px;justify-content:flex-end;justify-self:auto}
+.hdr .logo img{height:16px;width:auto}
+.hdr .lnk{text-decoration:none;color:#28333E;padding:12px 0}
+.menu-btn{display:none;background:none;border:0;padding:0;min-height:44px;min-width:44px;cursor:pointer;color:#28333E;font:400 14px 'Libre Franklin',sans-serif;text-align:right}
+.mnav{position:fixed;inset:0;z-index:60;background:#FFFFFF;display:flex;flex-direction:column;padding:16px clamp(20px,6vw,40px) 32px;animation:fade .4s ease both}
+.mnav a.big{font-family:'Libre Caslon Display',Georgia,serif;font-size:38px;line-height:1.3;text-decoration:none;display:block;padding:4px 0;width:fit-content;color:#28333E}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion: reduce){.mnav{animation:none !important}}
+@media (max-width:760px){
+.hdr{grid-template-columns:auto 1fr;height:48px}
+.hdr .l,.hdr .r .lnk{display:none}
+.menu-btn{display:block}
+.hdr .logo{order:-1}
+.hdr .logo img{height:15px}
+}
+/* footer: mobile */
+@media (max-width:760px){.ft{flex-direction:column;align-items:flex-start;gap:4px;padding-block:20px 24px}.ft-links{justify-content:flex-start;flex-direction:column;gap:0}}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="v tone-{{tone}}">
+<header class="hdr wrap">
+<nav class="l" aria-label="Principal">
+<a class="lnk" href="index.html">Início</a>
+<a class="lnk" href="historias.html">Histórias</a>
+</nav>
+<a href="index.html" class="logo" aria-label="Velune — página inicial"><img src="assets/logo.svg" alt="Velune"></a>
+<div class="r">
+<a class="lnk" href="index.html#sobre">Sobre</a>
+<a class="lnk" href="#contato">Contato</a>
+<button type="button" class="menu-btn" aria-label="Abrir menu" onClick="{{openMenu}}">Menu</button>
+</div>
+</header>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+<div class="mnav" role="dialog" aria-modal="true" aria-label="Menu">
+<div style="display: flex; justify-content: space-between; align-items: center; height: 48px">
+<img src="assets/logo.svg" alt="Velune" style="height: 20px; width: auto">
+<button type="button" class="menu-btn" style="display: block" onClick="{{closeMenu}}">Fechar</button>
+</div>
+<nav aria-label="Menu móvel" style="margin-top: auto; margin-bottom: auto">
+<a class="big" href="index.html">Início</a>
+<a class="big" href="historias.html">Histórias</a>
+<a class="big" href="index.html#sobre">Sobre</a>
+<a class="big" href="#contato" onClick="{{closeMenu}}">Contato</a>
+</nav>
+<div style="display: flex; justify-content: space-between; font-size: 13px; color: #28333E">
+<span>Afeto &amp; memórias</span>
+<a href="https://instagram.com/velune.fotografia" style="text-decoration: none">@velune.fotografia</a>
+</div>
+</div>
+</sc-if>
+
+<main>
+<h1 style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; margin: 0">Histórias</h1>
+<div class="grid">
+<sc-for list="{{projects}}" as="p" hint-placeholder-count="10">
+<a class="tile {{p.cls}}" href="historia.html#{{p.slug}}" aria-label="{{p.title}}, {{p.meta}}">
+<img src="{{p.cover}}" alt="{{p.alt}}" style="object-position: {{p.pos}}">
+<span class="veil" aria-hidden="true"></span>
+<span class="cap" aria-hidden="true"><span class="t">{{p.title}}</span><span class="m">{{p.meta}}</span></span>
+</a>
+</sc-for>
+</div>
+</main>
+
+<footer id="contato" class="ft wrap">
+<span>© 2026 Velune</span>
+<nav class="ft-links" aria-label="Contato">
+<a href="https://instagram.com/velune.fotografia">@velune.fotografia</a>
+<a href="https://wa.me/5584999999999">(84) 9 9870-6493</a>
+<a href="https://velunefotografia.com">velunefotografia.com</a>
+</nav>
+</footer>
+</div>
+</template>
+<noscript><p style="font-family:sans-serif;padding:24px">Ative o JavaScript para ver o site da Velune.</p></noscript>
+<script type="text/x-dc" data-dc-script data-props='{"tone":{"editor":"enum","options":["cor","pb"],"default":"cor","section":"Fotografia"},"$preview":{"width":1440,"height":3000}}'>
+const STORIES = [{"slug": "maria-emilia-gabriel", "title": "Maria Emilia e Gabriel", "meta": "Casamento", "cover": "assets/img/maria-emilia-gabriel-01.jpg", "wide": "assets/img/maria-emilia-gabriel-09.jpg"}, {"slug": "iza-yan", "title": "Iza e Yan", "meta": "Casamento", "cover": "assets/img/iza-yan-01.jpg", "wide": "assets/img/iza-yan-07.jpg"}, {"slug": "bia-joel", "title": "Bia e Joel", "meta": "Ensaio", "cover": "assets/img/bia-joel-01.jpg", "wide": "assets/img/bia-joel-07.jpg"}, {"slug": "priscila-thales", "title": "Priscila e Thales", "meta": "Casamento", "cover": "assets/img/priscila-thales-01.jpg", "wide": "assets/img/priscila-thales-04.jpg"}, {"slug": "laisa-esdras", "title": "Laisa e Esdras", "meta": "Ensaio", "cover": "assets/img/laisa-esdras-01.jpg", "wide": "assets/img/laisa-esdras-03.jpg"}, {"slug": "monique-kaleb", "title": "Monique e Kaleb", "meta": "Casamento", "cover": "assets/img/monique-kaleb-01.jpg", "wide": "assets/img/monique-kaleb-06.jpg"}, {"slug": "lipia-sergio", "title": "Lipia e Sergio", "meta": "Ensaio", "cover": "assets/img/lipia-sergio-01.jpg", "wide": "assets/img/lipia-sergio-07.jpg"}, {"slug": "brenda-filipe", "title": "Brenda e Filipe", "meta": "Casamento", "cover": "assets/img/brenda-filipe-01.jpg", "wide": "assets/img/brenda-filipe-09.jpg"}, {"slug": "karla-juliano", "title": "Karla e Juliano", "meta": "Casamento", "cover": "assets/img/karla-juliano-01.jpg", "wide": "assets/img/karla-juliano-015.jpg"}, {"slug": "iris-eidern", "title": "Iris e Eidern", "meta": "Casamento", "cover": "assets/img/iris-eidern-01.jpg", "wide": "assets/img/iris-eidern-010.jpg"}];
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { menuOpen: false };
+  }
+  renderVals() {
+    // Layout repeats: two half tiles, then one full-width tile (full tiles use a horizontal photo).
+    const projects = STORIES.map((s, i) => {
+      const full = i % 3 === 2 || (i === STORIES.length - 1 && i % 3 === 0);
+      return { slug: s.slug, title: s.title, meta: s.meta, cover: full ? s.wide : s.cover, alt: s.title + ' — ' + s.meta.toLowerCase(), pos: '50% 40%', cls: full ? 'full' : '' };
+    });
+    return { tone: this.props.tone ?? 'cor', menuOpen: this.state.menuOpen, openMenu: () => this.setState({ menuOpen: true }), closeMenu: () => this.setState({ menuOpen: false }), projects: projects, count: STORIES.length + ' histórias' };
+  }
+}
+</script>
+<script src="assets/js/morphdom.min.js"></script>
+<script src="assets/js/dc.js"></script>
+</body>
+</html>

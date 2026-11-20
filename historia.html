@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velune — História</title>
+<meta name="description" content="Velune — fotografia de casamentos e ensaios por Fellipe e Natália Gomes. Afeto e memórias.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&amp;family=Libre+Franklin:wght@300;400;500&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+html{scroll-behavior:smooth}
+a{color:#28333E}a:hover{color:#28333E}
+.v{font-family:'Libre Franklin',system-ui,sans-serif;font-size:14px;line-height:1.6;color:#28333E;background:#FFFFFF;overflow-x:clip;-webkit-font-smoothing:antialiased}
+.v *{box-sizing:border-box}
+.v img{display:block;max-width:100%}
+.serif{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400}
+.mute{color:#28333E}
+.wrap{padding-inline:clamp(20px,3.4vw,48px)}
+.ph{overflow:hidden;background:#E4DCD1}
+.ph img{width:100%;height:100%;object-fit:cover}
+.tone-pb .ph img{filter:grayscale(1)}
+.lnk{text-decoration:none;color:#28333E;padding:12px 0}
+.lnk:hover{color:#28333E}
+.hdr{position:sticky;top:0;z-index:30;height:52px;font-size:13px;border-bottom:1px solid rgba(228,220,209,.4);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:#FFFFFF}
+.hdr .r{justify-self:end;display:flex;gap:28px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.2fr) minmax(0,1fr);column-gap:32px;padding-top:clamp(40px,6vw,96px)}
+.aside{position:sticky;top:96px;align-self:start}
+.aside h1{font-size:21px;line-height:1.3;margin:0 0 4px}
+.aside p{margin:24px 0 0;color:#28333E;max-width:30ch}
+.seq{display:flex;flex-direction:column;align-items:center;gap:clamp(96px,12vw,180px);padding-bottom:clamp(96px,12vw,180px)}
+.seq figure{margin:0}
+.f-v{width:min(100%,520px)}.f-v .ph{aspect-ratio:4/5.2}
+.f-s{width:min(100%,340px)}.f-s .ph{aspect-ratio:3/4}
+.f-w{width:100%}.f-w .ph{aspect-ratio:3/2}
+.f-sq{width:min(100%,440px)}.f-sq .ph{aspect-ratio:1/1}
+figcaption{margin-top:12px;color:#28333E;font-size:13px}
+.quote{font-size:clamp(24px,2.4vw,34px);line-height:1.2;text-align:center;max-width:20ch;margin:0}
+.idx{text-align:right;align-self:start;position:sticky;top:96px}
+.idx a{display:block;text-decoration:none;color:#28333E;padding:4px 0}
+.idx a{opacity:.7}.idx a:hover,.idx a.on{opacity:1}
+.next{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:16px clamp(24px,3vw,48px);text-decoration:none;color:#28333E;padding-block:clamp(56px,7vw,104px);border-top:1px solid rgba(228,220,209,.5)}
+.next .txt{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.next .k{font-size:12px;letter-spacing:.04em;color:#28333E}
+.next .serif{font-size:clamp(24px,2.2vw,32px);line-height:1.15;letter-spacing:0;width:fit-content}
+.next .cover{flex:0 0 auto;width:clamp(140px,16vw,220px);aspect-ratio:4/5;overflow:hidden;background:#E4DCD1}
+.next .cover img{width:100%;height:100%;object-fit:cover;object-position:60% 50%;transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.next:hover .cover img,.next:focus-visible .cover img{transform:scale(1.04)}
+.next .go{grid-column:1;grid-row:2;justify-self:start;font-size:13px;color:#28333E}
+.next .go .arr{display:inline-block;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.next:hover .go .arr{transform:translateX(6px)}
+.ft{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:52px;padding-block:8px;flex-wrap:wrap;font-size:12px;color:#28333E;border-top:1px solid rgba(228,220,209,.4)}
+.ft-links{display:flex;flex-wrap:wrap;gap:4px 28px;justify-content:flex-end}
+.ft .ft-cta{color:#28333E}
+.ft .ft-cta .arr{display:inline-block;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.ft .ft-cta:hover .arr{transform:translateX(4px)}
+.ft a{text-decoration:none;color:#28333E;padding:12px 0}
+.ft a:hover{color:#28333E}
+/* hover: underline draws in from the left, retracts to the right */
+.lnk,.tbtn,.ft a,.ct-list a,.menu-btn,.mnav a.big,.idx a,.card .t span:first-child,.next .serif{text-decoration:none;background:linear-gradient(currentColor,currentColor) 100% calc(100% - var(--ul, 0px))/0 1px no-repeat;transition:background-size .55s cubic-bezier(.2,.7,.2,1),color .3s ease}
+.lnk:hover,.lnk:focus-visible,.tbtn:hover,.tbtn:focus-visible,.ft a:hover,.ft a:focus-visible,.ct-list a:hover,.ct-list a:focus-visible,.menu-btn:hover,.mnav a.big:hover,.idx a:hover,.card:hover .t span:first-child,.card:focus-visible .t span:first-child,.next:hover .serif{background-size:100% 1px;background-position:0 calc(100% - var(--ul, 0px))}
+.mnav a.big{width:fit-content}
+.tbtn:hover{color:#28333E}
+@media (prefers-reduced-motion: reduce){.lnk,.tbtn,.ft a,.ct-list a,.menu-btn,.mnav a.big,.idx a,.card .t span:first-child,.next .serif{transition:none}}
+:focus-visible{outline:1px solid #28333E;outline-offset:4px}
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.in{animation:up 1.2s cubic-bezier(.2,.7,.2,1) both}
+@supports (animation-timeline: view()){.rv{animation:up linear both;animation-timeline:view();animation-range:entry 5% entry 40%}}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.in,.rv{animation:none !important}}
+@media (max-width:900px){
+.layout{grid-template-columns:1fr}
+.aside,.idx{position:static}
+.idx{display:none}
+.seq{margin-top:56px;gap:72px}
+}
+@media (max-width:760px){.hdr{height:48px}.hdr .r .hide{display:none}}
+.lnk,.tbtn,.ft a{--ul:12px}.idx a,.ct-list a,.mnav a.big{--ul:4px}
+
+/* hover: hairline, soft */
+.lnk,.tbtn,.ft a,.ct-list a,.menu-btn,.mnav a.big,.idx a,.card .t span:first-child,.next .serif{--hl:color-mix(in srgb,currentColor 40%,transparent);background:linear-gradient(var(--hl),var(--hl)) 0 100%/0 1px no-repeat content-box;transition:background-size .8s cubic-bezier(.22,.61,.36,1)}
+.lnk:hover,.lnk:focus-visible,.tbtn:hover,.tbtn:focus-visible,.ft a:hover,.ft a:focus-visible,.ct-list a:hover,.ct-list a:focus-visible,.menu-btn:hover,.menu-btn:focus-visible,.mnav a.big:hover,.idx a:hover,.idx a:focus-visible,.card:hover .t span:first-child,.card:focus-visible .t span:first-child,.next:hover .serif{background-size:100% 1px;background-position:0 100%}
+.idx a{width:fit-content}
+@media (prefers-reduced-motion:reduce){.lnk,.tbtn,.ft a,.ct-list a,.menu-btn,.mnav a.big,.idx a,.card .t span:first-child,.next .serif{transition:none}}
+/* header: identical to Main */
+.hdr{position:sticky;top:0;z-index:30;height:52px;font-size:13px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:#FFFFFF;border-bottom:1px solid rgba(228,220,209,.4)}
+.hdr .l{display:flex;gap:28px}
+.hdr .r{display:flex;gap:28px;justify-content:flex-end;justify-self:auto}
+.hdr .logo img{height:16px;width:auto}
+.hdr .lnk{text-decoration:none;color:#28333E;padding:12px 0}
+.menu-btn{display:none;background:none;border:0;padding:0;min-height:44px;min-width:44px;cursor:pointer;color:#28333E;font:400 14px 'Libre Franklin',sans-serif;text-align:right}
+.mnav{position:fixed;inset:0;z-index:60;background:#FFFFFF;display:flex;flex-direction:column;padding:16px clamp(20px,6vw,40px) 32px;animation:fade .4s ease both}
+.mnav a.big{font-family:'Libre Caslon Display',Georgia,serif;font-size:38px;line-height:1.3;text-decoration:none;display:block;padding:4px 0;width:fit-content;color:#28333E}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion: reduce){.mnav{animation:none !important}}
+@media (max-width:760px){
+.hdr{grid-template-columns:auto 1fr;height:48px}
+.hdr .l,.hdr .r .lnk{display:none}
+.menu-btn{display:block}
+.hdr .logo{order:-1}
+.hdr .logo img{height:15px}
+}
+/* footer: mobile */
+@media (max-width:760px){.ft{flex-direction:column;align-items:flex-start;gap:4px;padding-block:20px 24px}.ft-links{justify-content:flex-start;flex-direction:column;gap:0}}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="v tone-{{tone}}">
+<header class="hdr wrap">
+<nav class="l" aria-label="Principal">
+<a class="lnk" href="index.html">Início</a>
+<a class="lnk" href="historias.html">Histórias</a>
+</nav>
+<a href="index.html" class="logo" aria-label="Velune — página inicial"><img src="assets/logo.svg" alt="Velune"></a>
+<div class="r">
+<a class="lnk" href="index.html#sobre">Sobre</a>
+<a class="lnk" href="#contato">Contato</a>
+<button type="button" class="menu-btn" aria-label="Abrir menu" onClick="{{openMenu}}">Menu</button>
+</div>
+</header>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+<div class="mnav" role="dialog" aria-modal="true" aria-label="Menu">
+<div style="display: flex; justify-content: space-between; align-items: center; height: 48px">
+<img src="assets/logo.svg" alt="Velune" style="height: 20px; width: auto">
+<button type="button" class="menu-btn" style="display: block" onClick="{{closeMenu}}">Fechar</button>
+</div>
+<nav aria-label="Menu móvel" style="margin-top: auto; margin-bottom: auto">
+<a class="big" href="index.html">Início</a>
+<a class="big" href="historias.html">Histórias</a>
+<a class="big" href="index.html#sobre">Sobre</a>
+<a class="big" href="#contato" onClick="{{closeMenu}}">Contato</a>
+</nav>
+<div style="display: flex; justify-content: space-between; font-size: 13px; color: #28333E">
+<span>Afeto &amp; memórias</span>
+<a href="https://instagram.com/velune.fotografia" style="text-decoration: none">@velune.fotografia</a>
+</div>
+</div>
+</sc-if>
+
+<main class="wrap">
+<div class="layout">
+<div class="aside in">
+<div class="mute" style="font-size: 12px; letter-spacing: 0.04em; margin-bottom: 10px">Histórias</div>
+<h1 class="serif">{{s.title}}</h1>
+<div class="mute">{{s.meta}}</div>
+<p>{{s.count}}</p>
+</div>
+
+<div class="seq">
+<sc-for list="{{s.imgs}}" as="im" hint-placeholder-count="9">
+<figure class="{{im.cls}}"><div class="ph"><img src="{{im.src}}" alt="{{im.alt}}" loading="lazy"></div></figure>
+</sc-for>
+</div>
+
+<nav class="idx" aria-label="Outras histórias">
+<sc-for list="{{index}}" as="x" hint-placeholder-count="10">
+<a class="{{x.cls}}" href="historia.html#{{x.slug}}" onClick="{{x.go}}">{{x.title}}</a>
+</sc-for>
+</nav>
+</div>
+
+<a class="next" href="historia.html#{{nx.slug}}" onClick="{{goNext}}">
+<span class="cover"><img src="{{nx.cover}}" alt=""></span>
+<span class="txt">
+<span class="k">Próxima história</span>
+<span class="serif">{{nx.title}}</span>
+</span>
+</a>
+</main>
+
+<footer id="contato" class="ft wrap">
+<span>© 2026 Velune</span>
+<nav class="ft-links" aria-label="Contato">
+<a href="https://instagram.com/velune.fotografia">@velune.fotografia</a>
+<a href="https://wa.me/5584999999999">(84) 9 9870-6493</a>
+<a href="https://velunefotografia.com">velunefotografia.com</a>
+</nav>
+</footer>
+</div>
+</template>
+<noscript><p style="font-family:sans-serif;padding:24px">Ative o JavaScript para ver o site da Velune.</p></noscript>
+<script type="text/x-dc" data-dc-script data-props='{"tone":{"editor":"enum","options":["cor","pb"],"default":"cor","section":"Fotografia"},"$preview":{"width":1440,"height":5200}}'>
+const STORIES = [{"slug": "maria-emilia-gabriel", "title": "Maria Emilia e Gabriel", "meta": "Casamento", "cover": "assets/img/maria-emilia-gabriel-01.jpg", "wide": "assets/img/maria-emilia-gabriel-09.jpg", "imgs": [{"src": "assets/img/maria-emilia-gabriel-01.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 1", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-001.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 2", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-002.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 3", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-02.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 4", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-004.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 5", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-005.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 6", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-006.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 7", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-007.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 8", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-03.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 9", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-009.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 10", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-010.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 11", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-011.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 12", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-012.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 13", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-04.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 14", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-014.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 15", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-015.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 16", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-016.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 17", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-017.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 18", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-018.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 19", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-019.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 20", "o": "h"}, {"src": "assets/img/maria-emilia-gabriel-020.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 21", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-021.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 22", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-022.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 23", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-023.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 24", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-024.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 25", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-05.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 26", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-026.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 27", "o": "h"}, {"src": "assets/img/maria-emilia-gabriel-027.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 28", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-06.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 29", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-029.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 30", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-030.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 31", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-07.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 32", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-032.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 33", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-033.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 34", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-034.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 35", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-036.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 36", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-08.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 37", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-038.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 38", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-039.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 39", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-09.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 40", "o": "h"}, {"src": "assets/img/maria-emilia-gabriel-041.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 41", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-042.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 42", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-043.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 43", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-044.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 44", "o": "h"}, {"src": "assets/img/maria-emilia-gabriel-045.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 45", "o": "v"}, {"src": "assets/img/maria-emilia-gabriel-046.jpg", "alt": "Maria Emilia e Gabriel — casamento, foto 46", "o": "v"}]}, {"slug": "iza-yan", "title": "Iza e Yan", "meta": "Casamento", "cover": "assets/img/iza-yan-01.jpg", "wide": "assets/img/iza-yan-07.jpg", "imgs": [{"src": "assets/img/iza-yan-01.jpg", "alt": "Iza e Yan — casamento, foto 1", "o": "v"}, {"src": "assets/img/iza-yan-001.jpg", "alt": "Iza e Yan — casamento, foto 2", "o": "h"}, {"src": "assets/img/iza-yan-002.jpg", "alt": "Iza e Yan — casamento, foto 3", "o": "h"}, {"src": "assets/img/iza-yan-02.jpg", "alt": "Iza e Yan — casamento, foto 4", "o": "v"}, {"src": "assets/img/iza-yan-004.jpg", "alt": "Iza e Yan — casamento, foto 5", "o": "v"}, {"src": "assets/img/iza-yan-005.jpg", "alt": "Iza e Yan — casamento, foto 6", "o": "v"}, {"src": "assets/img/iza-yan-006.jpg", "alt": "Iza e Yan — casamento, foto 7", "o": "v"}, {"src": "assets/img/iza-yan-007.jpg", "alt": "Iza e Yan — casamento, foto 8", "o": "v"}, {"src": "assets/img/iza-yan-008.jpg", "alt": "Iza e Yan — casamento, foto 9", "o": "v"}, {"src": "assets/img/iza-yan-009.jpg", "alt": "Iza e Yan — casamento, foto 10", "o": "v"}, {"src": "assets/img/iza-yan-010.jpg", "alt": "Iza e Yan — casamento, foto 11", "o": "v"}, {"src": "assets/img/iza-yan-011.jpg", "alt": "Iza e Yan — casamento, foto 12", "o": "v"}, {"src": "assets/img/iza-yan-012.jpg", "alt": "Iza e Yan — casamento, foto 13", "o": "v"}, {"src": "assets/img/iza-yan-013.jpg", "alt": "Iza e Yan — casamento, foto 14", "o": "h"}, {"src": "assets/img/iza-yan-03.jpg", "alt": "Iza e Yan — casamento, foto 15", "o": "v"}, {"src": "assets/img/iza-yan-015.jpg", "alt": "Iza e Yan — casamento, foto 16", "o": "v"}, {"src": "assets/img/iza-yan-016.jpg", "alt": "Iza e Yan — casamento, foto 17", "o": "h"}, {"src": "assets/img/iza-yan-018.jpg", "alt": "Iza e Yan — casamento, foto 18", "o": "v"}, {"src": "assets/img/iza-yan-019.jpg", "alt": "Iza e Yan — casamento, foto 19", "o": "h"}, {"src": "assets/img/iza-yan-020.jpg", "alt": "Iza e Yan — casamento, foto 20", "o": "v"}, {"src": "assets/img/iza-yan-021.jpg", "alt": "Iza e Yan — casamento, foto 21", "o": "v"}, {"src": "assets/img/iza-yan-022.jpg", "alt": "Iza e Yan — casamento, foto 22", "o": "v"}, {"src": "assets/img/iza-yan-023.jpg", "alt": "Iza e Yan — casamento, foto 23", "o": "v"}, {"src": "assets/img/iza-yan-04.jpg", "alt": "Iza e Yan — casamento, foto 24", "o": "v"}, {"src": "assets/img/iza-yan-025.jpg", "alt": "Iza e Yan — casamento, foto 25", "o": "v"}, {"src": "assets/img/iza-yan-026.jpg", "alt": "Iza e Yan — casamento, foto 26", "o": "h"}, {"src": "assets/img/iza-yan-05.jpg", "alt": "Iza e Yan — casamento, foto 27", "o": "v"}, {"src": "assets/img/iza-yan-028.jpg", "alt": "Iza e Yan — casamento, foto 28", "o": "v"}, {"src": "assets/img/iza-yan-029.jpg", "alt": "Iza e Yan — casamento, foto 29", "o": "v"}, {"src": "assets/img/iza-yan-030.jpg", "alt": "Iza e Yan — casamento, foto 30", "o": "v"}, {"src": "assets/img/iza-yan-031.jpg", "alt": "Iza e Yan — casamento, foto 31", "o": "v"}, {"src": "assets/img/iza-yan-032.jpg", "alt": "Iza e Yan — casamento, foto 32", "o": "v"}, {"src": "assets/img/iza-yan-06.jpg", "alt": "Iza e Yan — casamento, foto 33", "o": "v"}, {"src": "assets/img/iza-yan-034.jpg", "alt": "Iza e Yan — casamento, foto 34", "o": "h"}, {"src": "assets/img/iza-yan-035.jpg", "alt": "Iza e Yan — casamento, foto 35", "o": "v"}, {"src": "assets/img/iza-yan-036.jpg", "alt": "Iza e Yan — casamento, foto 36", "o": "v"}, {"src": "assets/img/iza-yan-037.jpg", "alt": "Iza e Yan — casamento, foto 37", "o": "v"}, {"src": "assets/img/iza-yan-038.jpg", "alt": "Iza e Yan — casamento, foto 38", "o": "v"}, {"src": "assets/img/iza-yan-07.jpg", "alt": "Iza e Yan — casamento, foto 39", "o": "h"}, {"src": "assets/img/iza-yan-040.jpg", "alt": "Iza e Yan — casamento, foto 40", "o": "h"}, {"src": "assets/img/iza-yan-041.jpg", "alt": "Iza e Yan — casamento, foto 41", "o": "v"}, {"src": "assets/img/iza-yan-042.jpg", "alt": "Iza e Yan — casamento, foto 42", "o": "v"}, {"src": "assets/img/iza-yan-043.jpg", "alt": "Iza e Yan — casamento, foto 43", "o": "v"}, {"src": "assets/img/iza-yan-08.jpg", "alt": "Iza e Yan — casamento, foto 44", "o": "v"}, {"src": "assets/img/iza-yan-045.jpg", "alt": "Iza e Yan — casamento, foto 45", "o": "h"}, {"src": "assets/img/iza-yan-046.jpg", "alt": "Iza e Yan — casamento, foto 46", "o": "h"}, {"src": "assets/img/iza-yan-047.jpg", "alt": "Iza e Yan — casamento, foto 47", "o": "v"}, {"src": "assets/img/iza-yan-09.jpg", "alt": "Iza e Yan — casamento, foto 48", "o": "v"}, {"src": "assets/img/iza-yan-049.jpg", "alt": "Iza e Yan — casamento, foto 49", "o": "v"}, {"src": "assets/img/iza-yan-050.jpg", "alt": "Iza e Yan — casamento, foto 50", "o": "v"}]}, {"slug": "bia-joel", "title": "Bia e Joel", "meta": "Ensaio", "cover": "assets/img/bia-joel-01.jpg", "wide": "assets/img/bia-joel-07.jpg", "imgs": [{"src": "assets/img/bia-joel-01.jpg", "alt": "Bia e Joel — ensaio, foto 1", "o": "v"}, {"src": "assets/img/bia-joel-02.jpg", "alt": "Bia e Joel — ensaio, foto 2", "o": "v"}, {"src": "assets/img/bia-joel-002.jpg", "alt": "Bia e Joel — ensaio, foto 3", "o": "v"}, {"src": "assets/img/bia-joel-03.jpg", "alt": "Bia e Joel — ensaio, foto 4", "o": "v"}, {"src": "assets/img/bia-joel-004.jpg", "alt": "Bia e Joel — ensaio, foto 5", "o": "h"}, {"src": "assets/img/bia-joel-005.jpg", "alt": "Bia e Joel — ensaio, foto 6", "o": "v"}, {"src": "assets/img/bia-joel-006.jpg", "alt": "Bia e Joel — ensaio, foto 7", "o": "h"}, {"src": "assets/img/bia-joel-007.jpg", "alt": "Bia e Joel — ensaio, foto 8", "o": "v"}, {"src": "assets/img/bia-joel-008.jpg", "alt": "Bia e Joel — ensaio, foto 9", "o": "v"}, {"src": "assets/img/bia-joel-009.jpg", "alt": "Bia e Joel — ensaio, foto 10", "o": "h"}, {"src": "assets/img/bia-joel-010.jpg", "alt": "Bia e Joel — ensaio, foto 11", "o": "h"}, {"src": "assets/img/bia-joel-011.jpg", "alt": "Bia e Joel — ensaio, foto 12", "o": "h"}, {"src": "assets/img/bia-joel-012.jpg", "alt": "Bia e Joel — ensaio, foto 13", "o": "v"}, {"src": "assets/img/bia-joel-013.jpg", "alt": "Bia e Joel — ensaio, foto 14", "o": "v"}, {"src": "assets/img/bia-joel-015.jpg", "alt": "Bia e Joel — ensaio, foto 15", "o": "v"}, {"src": "assets/img/bia-joel-016.jpg", "alt": "Bia e Joel — ensaio, foto 16", "o": "v"}, {"src": "assets/img/bia-joel-04.jpg", "alt": "Bia e Joel — ensaio, foto 17", "o": "v"}, {"src": "assets/img/bia-joel-018.jpg", "alt": "Bia e Joel — ensaio, foto 18", "o": "v"}, {"src": "assets/img/bia-joel-019.jpg", "alt": "Bia e Joel — ensaio, foto 19", "o": "v"}, {"src": "assets/img/bia-joel-020.jpg", "alt": "Bia e Joel — ensaio, foto 20", "o": "v"}, {"src": "assets/img/bia-joel-021.jpg", "alt": "Bia e Joel — ensaio, foto 21", "o": "h"}, {"src": "assets/img/bia-joel-022.jpg", "alt": "Bia e Joel — ensaio, foto 22", "o": "v"}, {"src": "assets/img/bia-joel-023.jpg", "alt": "Bia e Joel — ensaio, foto 23", "o": "h"}, {"src": "assets/img/bia-joel-024.jpg", "alt": "Bia e Joel — ensaio, foto 24", "o": "v"}, {"src": "assets/img/bia-joel-025.jpg", "alt": "Bia e Joel — ensaio, foto 25", "o": "v"}, {"src": "assets/img/bia-joel-05.jpg", "alt": "Bia e Joel — ensaio, foto 26", "o": "v"}, {"src": "assets/img/bia-joel-027.jpg", "alt": "Bia e Joel — ensaio, foto 27", "o": "v"}, {"src": "assets/img/bia-joel-028.jpg", "alt": "Bia e Joel — ensaio, foto 28", "o": "v"}, {"src": "assets/img/bia-joel-029.jpg", "alt": "Bia e Joel — ensaio, foto 29", "o": "h"}, {"src": "assets/img/bia-joel-030.jpg", "alt": "Bia e Joel — ensaio, foto 30", "o": "v"}, {"src": "assets/img/bia-joel-06.jpg", "alt": "Bia e Joel — ensaio, foto 31", "o": "v"}, {"src": "assets/img/bia-joel-032.jpg", "alt": "Bia e Joel — ensaio, foto 32", "o": "v"}, {"src": "assets/img/bia-joel-033.jpg", "alt": "Bia e Joel — ensaio, foto 33", "o": "v"}, {"src": "assets/img/bia-joel-034.jpg", "alt": "Bia e Joel — ensaio, foto 34", "o": "v"}, {"src": "assets/img/bia-joel-07.jpg", "alt": "Bia e Joel — ensaio, foto 35", "o": "h"}, {"src": "assets/img/bia-joel-036.jpg", "alt": "Bia e Joel — ensaio, foto 36", "o": "v"}, {"src": "assets/img/bia-joel-037.jpg", "alt": "Bia e Joel — ensaio, foto 37", "o": "v"}, {"src": "assets/img/bia-joel-038.jpg", "alt": "Bia e Joel — ensaio, foto 38", "o": "v"}, {"src": "assets/img/bia-joel-039.jpg", "alt": "Bia e Joel — ensaio, foto 39", "o": "v"}, {"src": "assets/img/bia-joel-040.jpg", "alt": "Bia e Joel — ensaio, foto 40", "o": "v"}, {"src": "assets/img/bia-joel-08.jpg", "alt": "Bia e Joel — ensaio, foto 41", "o": "v"}, {"src": "assets/img/bia-joel-042.jpg", "alt": "Bia e Joel — ensaio, foto 42", "o": "v"}, {"src": "assets/img/bia-joel-043.jpg", "alt": "Bia e Joel — ensaio, foto 43", "o": "v"}, {"src": "assets/img/bia-joel-09.jpg", "alt": "Bia e Joel — ensaio, foto 44", "o": "v"}, {"src": "assets/img/bia-joel-045.jpg", "alt": "Bia e Joel — ensaio, foto 45", "o": "h"}, {"src": "assets/img/bia-joel-046.jpg", "alt": "Bia e Joel — ensaio, foto 46", "o": "h"}, {"src": "assets/img/bia-joel-047.jpg", "alt": "Bia e Joel — ensaio, foto 47", "o": "h"}, {"src": "assets/img/bia-joel-048.jpg", "alt": "Bia e Joel — ensaio, foto 48", "o": "v"}, {"src": "assets/img/bia-joel-049.jpg", "alt": "Bia e Joel — ensaio, foto 49", "o": "v"}]}, {"slug": "priscila-thales", "title": "Priscila e Thales", "meta": "Casamento", "cover": "assets/img/priscila-thales-01.jpg", "wide": "assets/img/priscila-thales-04.jpg", "imgs": [{"src": "assets/img/priscila-thales-01.jpg", "alt": "Priscila e Thales — casamento, foto 1", "o": "v"}, {"src": "assets/img/priscila-thales-001.jpg", "alt": "Priscila e Thales — casamento, foto 2", "o": "v"}, {"src": "assets/img/priscila-thales-002.jpg", "alt": "Priscila e Thales — casamento, foto 3", "o": "v"}, {"src": "assets/img/priscila-thales-02.jpg", "alt": "Priscila e Thales — casamento, foto 4", "o": "v"}, {"src": "assets/img/priscila-thales-004.jpg", "alt": "Priscila e Thales — casamento, foto 5", "o": "v"}, {"src": "assets/img/priscila-thales-005.jpg", "alt": "Priscila e Thales — casamento, foto 6", "o": "v"}, {"src": "assets/img/priscila-thales-03.jpg", "alt": "Priscila e Thales — casamento, foto 7", "o": "v"}, {"src": "assets/img/priscila-thales-007.jpg", "alt": "Priscila e Thales — casamento, foto 8", "o": "h"}, {"src": "assets/img/priscila-thales-008.jpg", "alt": "Priscila e Thales — casamento, foto 9", "o": "v"}, {"src": "assets/img/priscila-thales-04.jpg", "alt": "Priscila e Thales — casamento, foto 10", "o": "h"}, {"src": "assets/img/priscila-thales-010.jpg", "alt": "Priscila e Thales — casamento, foto 11", "o": "h"}, {"src": "assets/img/priscila-thales-05.jpg", "alt": "Priscila e Thales — casamento, foto 12", "o": "v"}, {"src": "assets/img/priscila-thales-012.jpg", "alt": "Priscila e Thales — casamento, foto 13", "o": "v"}, {"src": "assets/img/priscila-thales-013.jpg", "alt": "Priscila e Thales — casamento, foto 14", "o": "h"}, {"src": "assets/img/priscila-thales-015.jpg", "alt": "Priscila e Thales — casamento, foto 15", "o": "v"}, {"src": "assets/img/priscila-thales-06.jpg", "alt": "Priscila e Thales — casamento, foto 16", "o": "v"}, {"src": "assets/img/priscila-thales-017.jpg", "alt": "Priscila e Thales — casamento, foto 17", "o": "v"}, {"src": "assets/img/priscila-thales-018.jpg", "alt": "Priscila e Thales — casamento, foto 18", "o": "v"}, {"src": "assets/img/priscila-thales-019.jpg", "alt": "Priscila e Thales — casamento, foto 19", "o": "h"}, {"src": "assets/img/priscila-thales-020.jpg", "alt": "Priscila e Thales — casamento, foto 20", "o": "v"}, {"src": "assets/img/priscila-thales-021.jpg", "alt": "Priscila e Thales — casamento, foto 21", "o": "v"}, {"src": "assets/img/priscila-thales-07.jpg", "alt": "Priscila e Thales — casamento, foto 22", "o": "v"}, {"src": "assets/img/priscila-thales-023.jpg", "alt": "Priscila e Thales — casamento, foto 23", "o": "h"}, {"src": "assets/img/priscila-thales-08.jpg", "alt": "Priscila e Thales — casamento, foto 24", "o": "v"}, {"src": "assets/img/priscila-thales-025.jpg", "alt": "Priscila e Thales — casamento, foto 25", "o": "v"}, {"src": "assets/img/priscila-thales-026.jpg", "alt": "Priscila e Thales — casamento, foto 26", "o": "v"}, {"src": "assets/img/priscila-thales-09.jpg", "alt": "Priscila e Thales — casamento, foto 27", "o": "v"}, {"src": "assets/img/priscila-thales-028.jpg", "alt": "Priscila e Thales — casamento, foto 28", "o": "v"}]}, {"slug": "laisa-esdras", "title": "Laisa e Esdras", "meta": "Ensaio", "cover": "assets/img/laisa-esdras-01.jpg", "wide": "assets/img/laisa-esdras-03.jpg", "imgs": [{"src": "assets/img/laisa-esdras-01.jpg", "alt": "Laisa e Esdras — ensaio, foto 1", "o": "v"}, {"src": "assets/img/laisa-esdras-02.jpg", "alt": "Laisa e Esdras — ensaio, foto 2", "o": "v"}, {"src": "assets/img/laisa-esdras-03.jpg", "alt": "Laisa e Esdras — ensaio, foto 3", "o": "h"}, {"src": "assets/img/laisa-esdras-003.jpg", "alt": "Laisa e Esdras — ensaio, foto 4", "o": "v"}, {"src": "assets/img/laisa-esdras-004.jpg", "alt": "Laisa e Esdras — ensaio, foto 5", "o": "v"}, {"src": "assets/img/laisa-esdras-04.jpg", "alt": "Laisa e Esdras — ensaio, foto 6", "o": "v"}, {"src": "assets/img/laisa-esdras-006.jpg", "alt": "Laisa e Esdras — ensaio, foto 7", "o": "v"}, {"src": "assets/img/laisa-esdras-007.jpg", "alt": "Laisa e Esdras — ensaio, foto 8", "o": "v"}, {"src": "assets/img/laisa-esdras-008.jpg", "alt": "Laisa e Esdras — ensaio, foto 9", "o": "v"}, {"src": "assets/img/laisa-esdras-009.jpg", "alt": "Laisa e Esdras — ensaio, foto 10", "o": "v"}, {"src": "assets/img/laisa-esdras-010.jpg", "alt": "Laisa e Esdras — ensaio, foto 11", "o": "h"}, {"src": "assets/img/laisa-esdras-011.jpg", "alt": "Laisa e Esdras — ensaio, foto 12", "o": "v"}, {"src": "assets/img/laisa-esdras-012.jpg", "alt": "Laisa e Esdras — ensaio, foto 13", "o": "h"}, {"src": "assets/img/laisa-esdras-05.jpg", "alt": "Laisa e Esdras — ensaio, foto 14", "o": "v"}, {"src": "assets/img/laisa-esdras-06.jpg", "alt": "Laisa e Esdras — ensaio, foto 15", "o": "v"}, {"src": "assets/img/laisa-esdras-07.jpg", "alt": "Laisa e Esdras — ensaio, foto 16", "o": "v"}, {"src": "assets/img/laisa-esdras-016.jpg", "alt": "Laisa e Esdras — ensaio, foto 17", "o": "v"}, {"src": "assets/img/laisa-esdras-017.jpg", "alt": "Laisa e Esdras — ensaio, foto 18", "o": "v"}, {"src": "assets/img/laisa-esdras-018.jpg", "alt": "Laisa e Esdras — ensaio, foto 19", "o": "v"}, {"src": "assets/img/laisa-esdras-08.jpg", "alt": "Laisa e Esdras — ensaio, foto 20", "o": "v"}, {"src": "assets/img/laisa-esdras-020.jpg", "alt": "Laisa e Esdras — ensaio, foto 21", "o": "v"}, {"src": "assets/img/laisa-esdras-021.jpg", "alt": "Laisa e Esdras — ensaio, foto 22", "o": "v"}, {"src": "assets/img/laisa-esdras-022.jpg", "alt": "Laisa e Esdras — ensaio, foto 23", "o": "v"}, {"src": "assets/img/laisa-esdras-09.jpg", "alt": "Laisa e Esdras — ensaio, foto 24", "o": "h"}, {"src": "assets/img/laisa-esdras-025.jpg", "alt": "Laisa e Esdras — ensaio, foto 25", "o": "v"}]}, {"slug": "monique-kaleb", "title": "Monique e Kaleb", "meta": "Casamento", "cover": "assets/img/monique-kaleb-01.jpg", "wide": "assets/img/monique-kaleb-06.jpg", "imgs": [{"src": "assets/img/monique-kaleb-01.jpg", "alt": "Monique e Kaleb — casamento, foto 1", "o": "v"}, {"src": "assets/img/monique-kaleb-001.jpg", "alt": "Monique e Kaleb — casamento, foto 2", "o": "h"}, {"src": "assets/img/monique-kaleb-002.jpg", "alt": "Monique e Kaleb — casamento, foto 3", "o": "h"}, {"src": "assets/img/monique-kaleb-003.jpg", "alt": "Monique e Kaleb — casamento, foto 4", "o": "h"}, {"src": "assets/img/monique-kaleb-004.jpg", "alt": "Monique e Kaleb — casamento, foto 5", "o": "v"}, {"src": "assets/img/monique-kaleb-02.jpg", "alt": "Monique e Kaleb — casamento, foto 6", "o": "v"}, {"src": "assets/img/monique-kaleb-006.jpg", "alt": "Monique e Kaleb — casamento, foto 7", "o": "h"}, {"src": "assets/img/monique-kaleb-007.jpg", "alt": "Monique e Kaleb — casamento, foto 8", "o": "v"}, {"src": "assets/img/monique-kaleb-008.jpg", "alt": "Monique e Kaleb — casamento, foto 9", "o": "h"}, {"src": "assets/img/monique-kaleb-03.jpg", "alt": "Monique e Kaleb — casamento, foto 10", "o": "v"}, {"src": "assets/img/monique-kaleb-04.jpg", "alt": "Monique e Kaleb — casamento, foto 11", "o": "v"}, {"src": "assets/img/monique-kaleb-011.jpg", "alt": "Monique e Kaleb — casamento, foto 12", "o": "h"}, {"src": "assets/img/monique-kaleb-012.jpg", "alt": "Monique e Kaleb — casamento, foto 13", "o": "h"}, {"src": "assets/img/monique-kaleb-013.jpg", "alt": "Monique e Kaleb — casamento, foto 14", "o": "h"}, {"src": "assets/img/monique-kaleb-014.jpg", "alt": "Monique e Kaleb — casamento, foto 15", "o": "h"}, {"src": "assets/img/monique-kaleb-015.jpg", "alt": "Monique e Kaleb — casamento, foto 16", "o": "h"}, {"src": "assets/img/monique-kaleb-016.jpg", "alt": "Monique e Kaleb — casamento, foto 17", "o": "v"}, {"src": "assets/img/monique-kaleb-05.jpg", "alt": "Monique e Kaleb — casamento, foto 18", "o": "v"}, {"src": "assets/img/monique-kaleb-06.jpg", "alt": "Monique e Kaleb — casamento, foto 19", "o": "h"}, {"src": "assets/img/monique-kaleb-019.jpg", "alt": "Monique e Kaleb — casamento, foto 20", "o": "v"}, {"src": "assets/img/monique-kaleb-07.jpg", "alt": "Monique e Kaleb — casamento, foto 21", "o": "v"}, {"src": "assets/img/monique-kaleb-022.jpg", "alt": "Monique e Kaleb — casamento, foto 22", "o": "v"}, {"src": "assets/img/monique-kaleb-023.jpg", "alt": "Monique e Kaleb — casamento, foto 23", "o": "h"}, {"src": "assets/img/monique-kaleb-08.jpg", "alt": "Monique e Kaleb — casamento, foto 24", "o": "v"}, {"src": "assets/img/monique-kaleb-025.jpg", "alt": "Monique e Kaleb — casamento, foto 25", "o": "v"}, {"src": "assets/img/monique-kaleb-09.jpg", "alt": "Monique e Kaleb — casamento, foto 26", "o": "v"}]}, {"slug": "lipia-sergio", "title": "Lipia e Sergio", "meta": "Ensaio", "cover": "assets/img/lipia-sergio-01.jpg", "wide": "assets/img/lipia-sergio-07.jpg", "imgs": [{"src": "assets/img/lipia-sergio-01.jpg", "alt": "Lipia e Sergio — ensaio, foto 1", "o": "v"}, {"src": "assets/img/lipia-sergio-02.jpg", "alt": "Lipia e Sergio — ensaio, foto 2", "o": "v"}, {"src": "assets/img/lipia-sergio-002.jpg", "alt": "Lipia e Sergio — ensaio, foto 3", "o": "h"}, {"src": "assets/img/lipia-sergio-004.jpg", "alt": "Lipia e Sergio — ensaio, foto 4", "o": "h"}, {"src": "assets/img/lipia-sergio-03.jpg", "alt": "Lipia e Sergio — ensaio, foto 5", "o": "v"}, {"src": "assets/img/lipia-sergio-04.jpg", "alt": "Lipia e Sergio — ensaio, foto 6", "o": "v"}, {"src": "assets/img/lipia-sergio-007.jpg", "alt": "Lipia e Sergio — ensaio, foto 7", "o": "v"}, {"src": "assets/img/lipia-sergio-05.jpg", "alt": "Lipia e Sergio — ensaio, foto 8", "o": "v"}, {"src": "assets/img/lipia-sergio-009.jpg", "alt": "Lipia e Sergio — ensaio, foto 9", "o": "v"}, {"src": "assets/img/lipia-sergio-010.jpg", "alt": "Lipia e Sergio — ensaio, foto 10", "o": "v"}, {"src": "assets/img/lipia-sergio-011.jpg", "alt": "Lipia e Sergio — ensaio, foto 11", "o": "h"}, {"src": "assets/img/lipia-sergio-06.jpg", "alt": "Lipia e Sergio — ensaio, foto 12", "o": "v"}, {"src": "assets/img/lipia-sergio-013.jpg", "alt": "Lipia e Sergio — ensaio, foto 13", "o": "v"}, {"src": "assets/img/lipia-sergio-014.jpg", "alt": "Lipia e Sergio — ensaio, foto 14", "o": "v"}, {"src": "assets/img/lipia-sergio-07.jpg", "alt": "Lipia e Sergio — ensaio, foto 15", "o": "h"}, {"src": "assets/img/lipia-sergio-016.jpg", "alt": "Lipia e Sergio — ensaio, foto 16", "o": "v"}, {"src": "assets/img/lipia-sergio-017.jpg", "alt": "Lipia e Sergio — ensaio, foto 17", "o": "v"}, {"src": "assets/img/lipia-sergio-018.jpg", "alt": "Lipia e Sergio — ensaio, foto 18", "o": "v"}, {"src": "assets/img/lipia-sergio-08.jpg", "alt": "Lipia e Sergio — ensaio, foto 19", "o": "v"}, {"src": "assets/img/lipia-sergio-09.jpg", "alt": "Lipia e Sergio — ensaio, foto 20", "o": "v"}, {"src": "assets/img/lipia-sergio-021.jpg", "alt": "Lipia e Sergio — ensaio, foto 21", "o": "v"}, {"src": "assets/img/lipia-sergio-022.jpg", "alt": "Lipia e Sergio — ensaio, foto 22", "o": "v"}, {"src": "assets/img/lipia-sergio-023.jpg", "alt": "Lipia e Sergio — ensaio, foto 23", "o": "h"}]}, {"slug": "brenda-filipe", "title": "Brenda e Filipe", "meta": "Casamento", "cover": "assets/img/brenda-filipe-01.jpg", "wide": "assets/img/brenda-filipe-09.jpg", "imgs": [{"src": "assets/img/brenda-filipe-01.jpg", "alt": "Brenda e Filipe — casamento, foto 1", "o": "v"}, {"src": "assets/img/brenda-filipe-02.jpg", "alt": "Brenda e Filipe — casamento, foto 2", "o": "v"}, {"src": "assets/img/brenda-filipe-03.jpg", "alt": "Brenda e Filipe — casamento, foto 3", "o": "v"}, {"src": "assets/img/brenda-filipe-04.jpg", "alt": "Brenda e Filipe — casamento, foto 4", "o": "v"}, {"src": "assets/img/brenda-filipe-05.jpg", "alt": "Brenda e Filipe — casamento, foto 5", "o": "v"}, {"src": "assets/img/brenda-filipe-06.jpg", "alt": "Brenda e Filipe — casamento, foto 6", "o": "v"}, {"src": "assets/img/brenda-filipe-006.jpg", "alt": "Brenda e Filipe — casamento, foto 7", "o": "v"}, {"src": "assets/img/brenda-filipe-07.jpg", "alt": "Brenda e Filipe — casamento, foto 8", "o": "v"}, {"src": "assets/img/brenda-filipe-009.jpg", "alt": "Brenda e Filipe — casamento, foto 9", "o": "v"}, {"src": "assets/img/brenda-filipe-010.jpg", "alt": "Brenda e Filipe — casamento, foto 10", "o": "v"}, {"src": "assets/img/brenda-filipe-011.jpg", "alt": "Brenda e Filipe — casamento, foto 11", "o": "v"}, {"src": "assets/img/brenda-filipe-012.jpg", "alt": "Brenda e Filipe — casamento, foto 12", "o": "h"}, {"src": "assets/img/brenda-filipe-08.jpg", "alt": "Brenda e Filipe — casamento, foto 13", "o": "v"}, {"src": "assets/img/brenda-filipe-09.jpg", "alt": "Brenda e Filipe — casamento, foto 14", "o": "h"}]}, {"slug": "karla-juliano", "title": "Karla e Juliano", "meta": "Casamento", "cover": "assets/img/karla-juliano-01.jpg", "wide": "assets/img/karla-juliano-015.jpg", "imgs": [{"src": "assets/img/karla-juliano-01.jpg", "alt": "Karla e Juliano — casamento, foto 1", "o": "v"}, {"src": "assets/img/karla-juliano-02.jpg", "alt": "Karla e Juliano — casamento, foto 2", "o": "v"}, {"src": "assets/img/karla-juliano-03.jpg", "alt": "Karla e Juliano — casamento, foto 3", "o": "v"}, {"src": "assets/img/karla-juliano-04.jpg", "alt": "Karla e Juliano — casamento, foto 4", "o": "v"}, {"src": "assets/img/karla-juliano-004.jpg", "alt": "Karla e Juliano — casamento, foto 5", "o": "v"}, {"src": "assets/img/karla-juliano-05.jpg", "alt": "Karla e Juliano — casamento, foto 6", "o": "v"}, {"src": "assets/img/karla-juliano-006.jpg", "alt": "Karla e Juliano — casamento, foto 7", "o": "v"}, {"src": "assets/img/karla-juliano-06.jpg", "alt": "Karla e Juliano — casamento, foto 8", "o": "v"}, {"src": "assets/img/karla-juliano-008.jpg", "alt": "Karla e Juliano — casamento, foto 9", "o": "v"}, {"src": "assets/img/karla-juliano-009.jpg", "alt": "Karla e Juliano — casamento, foto 10", "o": "v"}, {"src": "assets/img/karla-juliano-07.jpg", "alt": "Karla e Juliano — casamento, foto 11", "o": "v"}, {"src": "assets/img/karla-juliano-011.jpg", "alt": "Karla e Juliano — casamento, foto 12", "o": "v"}, {"src": "assets/img/karla-juliano-08.jpg", "alt": "Karla e Juliano — casamento, foto 13", "o": "v"}, {"src": "assets/img/karla-juliano-013.jpg", "alt": "Karla e Juliano — casamento, foto 14", "o": "v"}, {"src": "assets/img/karla-juliano-015.jpg", "alt": "Karla e Juliano — casamento, foto 15", "o": "h"}, {"src": "assets/img/karla-juliano-09.jpg", "alt": "Karla e Juliano — casamento, foto 16", "o": "v"}, {"src": "assets/img/karla-juliano-017.jpg", "alt": "Karla e Juliano — casamento, foto 17", "o": "v"}]}, {"slug": "iris-eidern", "title": "Iris e Eidern", "meta": "Casamento", "cover": "assets/img/iris-eidern-01.jpg", "wide": "assets/img/iris-eidern-010.jpg", "imgs": [{"src": "assets/img/iris-eidern-01.jpg", "alt": "Iris e Eidern — casamento, foto 1", "o": "v"}, {"src": "assets/img/iris-eidern-02.jpg", "alt": "Iris e Eidern — casamento, foto 2", "o": "v"}, {"src": "assets/img/iris-eidern-03.jpg", "alt": "Iris e Eidern — casamento, foto 3", "o": "v"}, {"src": "assets/img/iris-eidern-04.jpg", "alt": "Iris e Eidern — casamento, foto 4", "o": "v"}, {"src": "assets/img/iris-eidern-05.jpg", "alt": "Iris e Eidern — casamento, foto 5", "o": "v"}, {"src": "assets/img/iris-eidern-006.jpg", "alt": "Iris e Eidern — casamento, foto 6", "o": "v"}, {"src": "assets/img/iris-eidern-007.jpg", "alt": "Iris e Eidern — casamento, foto 7", "o": "v"}, {"src": "assets/img/iris-eidern-06.jpg", "alt": "Iris e Eidern — casamento, foto 8", "o": "v"}, {"src": "assets/img/iris-eidern-07.jpg", "alt": "Iris e Eidern — casamento, foto 9", "o": "v"}, {"src": "assets/img/iris-eidern-010.jpg", "alt": "Iris e Eidern — casamento, foto 10", "o": "h"}, {"src": "assets/img/iris-eidern-08.jpg", "alt": "Iris e Eidern — casamento, foto 11", "o": "v"}, {"src": "assets/img/iris-eidern-012.jpg", "alt": "Iris e Eidern — casamento, foto 12", "o": "v"}, {"src": "assets/img/iris-eidern-013.jpg", "alt": "Iris e Eidern — casamento, foto 13", "o": "v"}, {"src": "assets/img/iris-eidern-09.jpg", "alt": "Iris e Eidern — casamento, foto 14", "o": "v"}]}];
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { cur: 0, menuOpen: false };
+  }
+  fromHash() {
+    let h = '';
+    try { h = decodeURIComponent((window.location.hash || '').slice(1)); } catch (e) {}
+    const i = STORIES.findIndex((s) => s.slug === h);
+    if (i >= 0 && i !== this.state.cur) this.setState({ cur: i });
+  }
+  componentDidMount() {
+    this.fromHash();
+    this._onHash = () => this.fromHash();
+    window.addEventListener('hashchange', this._onHash);
+  }
+  componentWillUnmount() { window.removeEventListener('hashchange', this._onHash); }
+  go(i) {
+    return () => {
+      this.setState({ cur: i, menuOpen: false });
+      try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) { window.scrollTo(0, 0); }
+    };
+  }
+  renderVals() {
+    const cur = this.state.cur;
+    const s = STORIES[cur];
+    let v = 0;
+    const imgs = s.imgs.map((im, k) => {
+      let cls = 'f-w';
+      if (im.o === 'v') { cls = ['f-v', 'f-s', 'f-v', 'f-sq'][v % 4]; v++; }
+      return { src: im.src, alt: im.alt, cls: cls + (k === 0 ? ' in' : ' rv') };
+    });
+    const ni = (cur + 1) % STORIES.length;
+    return {
+      tone: this.props.tone ?? 'cor',
+      menuOpen: this.state.menuOpen,
+      openMenu: () => this.setState({ menuOpen: true }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      s: { title: s.title, meta: s.meta, count: s.imgs.length + ' fotografias', imgs: imgs },
+      index: STORIES.map((x, i) => ({ slug: x.slug, title: x.title, cls: i === cur ? 'on' : '', go: this.go(i) })),
+      nx: { slug: STORIES[ni].slug, title: STORIES[ni].title, cover: STORIES[ni].cover },
+      goNext: this.go(ni)
+    };
+  }
+}
+</script>
+<script src="assets/js/morphdom.min.js"></script>
+<script src="assets/js/dc.js"></script>
+</body>
+</html>
