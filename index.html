@@ -246,7 +246,7 @@ a{color:#28333E}a:hover{color:#28333E}
 .idx a{width:fit-content}
 @media (prefers-reduced-motion:reduce){.lnk,.tbtn,.ft a,.ct-list a,.menu-btn,.mnav a.big,.idx a,.card .t span:first-child,.next .serif{transition:none}}
 /* footer: mobile */
-@media (max-width:760px){.ft{flex-direction:column;align-items:flex-start;gap:4px;padding-block:20px 24px}.ft-links{justify-content:flex-start;flex-direction:column;gap:0}}
+@media (max-width:760px){.ft{flex-direction:column-reverse;align-items:flex-start;justify-content:flex-start;gap:16px;padding-block:24px 28px}.ft-links{display:flex;justify-content:flex-start;flex-direction:column;align-items:flex-start;gap:2px}.ft-links a{padding:6px 0}.mnav-foot{flex-direction:column;align-items:flex-start;gap:6px}}
 </style>
 </head>
 <body>
@@ -279,9 +279,9 @@ a{color:#28333E}a:hover{color:#28333E}
 <a class="big" href="#sobre" onClick="{{closeMenu}}">Sobre</a>
 <a class="big" href="#contato" onClick="{{closeMenu}}">Contato</a>
 </nav>
-<div class="mute" style="display: flex; justify-content: space-between; font-size: 13px">
+<div class="mute mnav-foot" style="display: flex; justify-content: space-between; font-size: 13px">
 <span>Afeto &amp; memórias</span>
-<a href="https://instagram.com/velune.fotografia" style="text-decoration: none">@velune.fotografia</a>
+<a href="https://www.instagram.com/velune.fotografia/" target="_blank" rel="noopener" style="text-decoration: none">@velune.fotografia</a>
 </div>
 </div>
 </sc-if>
@@ -348,7 +348,7 @@ a{color:#28333E}a:hover{color:#28333E}
 
 <footer id="contato" class="ft wrap">
 <span>© 2026 Velune</span>
-<nav class="ft-links" aria-label="Contato"><a href="https://instagram.com/velune.fotografia">@velune.fotografia</a><a href="https://wa.me/5584999999999">(84) 9 9870-6493</a><a href="https://velunefotografia.com">velunefotografia.com</a></nav>
+<nav class="ft-links" aria-label="Contato"><a href="https://www.instagram.com/velune.fotografia/" target="_blank" rel="noopener">@velune.fotografia</a><a href="https://wa.me/5584998706493" target="_blank" rel="noopener">(84) 9 9870-6493</a></nav>
 </footer>
 
 <!-- GALLERY -->
